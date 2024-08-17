@@ -1,0 +1,217 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    display: flex;
+}
+
+header {
+    background-color: white;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+header .logo img {
+    height: 23px; 
+}
+
+header .search-bar {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin: 0 2rem;
+}
+
+header .search-bar input {
+    flex: 1;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 20px 0 0 20px; 
+    outline: none;
+}
+
+header .search-bar button {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-left: none;
+    background-color: #f8f8f8;
+    border-radius: 0 20px 20px 0; 
+    cursor: pointer;
+}
+
+header .search-bar .microphone {
+    margin-left: 0.5rem;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+header .user-actions button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+header .user-actions img {
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: white;
+    border-right: 1px solid #ddd;
+    position: fixed;
+    top: 64px; 
+    bottom: 0;
+    padding-top: 1rem;
+    overflow-y: auto;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 0.5rem 1rem;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: bold;
+    display: block;
+}
+
+.sidebar ul hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 0.5rem 0;
+}
+
+main {
+    margin-left: 200px; 
+    padding-top: 64px; 
+    width: 100%;
+}
+
+main .container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between; 
+}
+
+/* Style for horizontal options under the upper bar */
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem; 
+    padding: 0.5rem 0; 
+}
+
+.options ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.options ul li {
+    margin-right: 1rem; 
+}
+
+.options ul li a {
+    text-decoration: none;
+    color: #1a1a1a;
+    padding: 0.5rem 1rem;
+    background-color: rgb(230, 230, 230);
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.options ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Shorts section */
+.grid-shorts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Increased gap between shorts */
+    justify-content: space-between; /* Ensure even spacing between shorts */
+}
+
+.short {
+    width: 180px;
+    background-color: #fff;
+    padding: 3px;
+}
+
+.short h4 {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.short p {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.video {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(33.33% - 1rem); 
+    margin-bottom: 1rem; 
+    text-align: left;
+}
+
+.video img {
+    width: 100%;
+    display: block;
+}
+
+.video h3 {
+    margin: 0.5rem;
+    font-size: 1rem;
+}
+
+.video p {
+    margin: 0 0.5rem 0.5rem;
+    color: #555;
+    font-size: 0.875rem;
+}
+
+.sidebar footer {
+    padding: 1rem;
+    text-align: center;
+    color: #555;
+    font-size: 0.75rem;
+}
